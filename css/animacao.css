@@ -1,6 +1,5 @@
 :root{
     --vermelho: #e50914;
-
 }
 
 .container.logo, span{
@@ -10,8 +9,6 @@
     margin-left: 7px;    
 
 }
-
-
 
 .logo::first-letter:hover{
     color: black;
