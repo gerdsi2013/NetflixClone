@@ -23,7 +23,6 @@ header .conteiner {
     justify-content: space-between;
     align-self: baseline;
 }
-
 header nav a {
     text-decoration: none;
     color: wheat;

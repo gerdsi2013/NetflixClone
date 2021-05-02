@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <title>login</title>
 </head>
+
 <body>
     
+    <main class="container-main">
+      
+        <nav class="logo">
+            <img src="/img/logo.svg.png" alt="logo">
+        </nav> 
+        <div class="container-child">
+            <h2 class="entrar">Entrar</h2>
+            <form action="post" class="formulario">
+                <input class="input" type="text" name="texto" placeholder="Email ou número de telefone">
+                <br>
+                <input type="password" name="senha" id="senha" placeholder="Senha">
+                <br>
+                <button class="button" type="submit">Entrar</button>
+                <br>
+                <div class="form-checkbox">
+                    <div class="checkbox-child">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <label for="text">Lembre-se de mim</label>
+                    </div>
+                    <div class="ajuda">
+                        <span><a href="#">Precisa de ajuda?</a></span>
+                    </div>
+                </div>
+                <div class="texto">
+                    <div class="facebook">
+                        <i class="fab fa-facebook-square"></i>
+                        <a href="#">Conectar com facebook</a>
+                    </div>
+
+                    <span>Novo por aqui?<a href="">Assine agora.</a></span>
+                    <p>Está página é protegida pelo Google reCAPTCHA
+                        para garantir que vocẽ não é um robô. <span><a href="#">Saiba mais.</a></span>
+                    </p>
+                </div>
+
+            </form>
+
+
+        </div>
+
+
+        <footer class="footer">
+
+        </footer>
+    </main>
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
 </body>
+
 </html>
