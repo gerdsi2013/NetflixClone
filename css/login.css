@@ -17,13 +17,13 @@ body{
     position: absolute;
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 100% auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: rgba(0,0,0,0.5);
-    border: 1px solid blue;
+    
 }
 .logo{
    position:relative;
@@ -44,7 +44,8 @@ body{
 }
 .entrar{
     color: #fff;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
 }
 .formulario>input{
     margin-top:1rem;
@@ -76,22 +77,91 @@ cursor: pointer;
 }
 
 .form-checkbox{
-    color: #fff;
+    color:rgba(255,255,255,0.6);
     font-size:0.8rem;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
-
 .ajuda span a{
     text-decoration: none;
-    color: #fff;
+    color:rgba(255,255,255,0.6);
 }
 .ajuda span a:hover{
 text-decoration: underline;
 }
-.footer{
-    width: 100%;
-    height:20vh;
-    background-color: rgba(0,0,0,0.8);
+
+.facebook{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
 }
+.facebook a{
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    text-decoration: none;
+    color:rgba(255,255,255,0.6);
+    
+}
+.facebook i{
+    color: blue;
+    font-size: 1.5rem;
+}
+.novo{
+    color: rgba(255,255,255,0.6);
+}
+.assine a{
+    text-decoration: none;
+    color: #fff;
+}
+.assine a:hover{
+    text-decoration: underline;
+    cursor:pointer;   
+}
+
+.texto p{
+    color: rgba(255,255,255,0.6);
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 9rem;
+}
+.saiba a{
+    text-decoration: none;
+}
+.saiba a{
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgb(33, 129, 240);
+}
+
+
+.footer{
+    margin-top: 6rem;
+    width: 100%;
+    height: 40vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(0,0,0,0.7);
+    color: rgba(255,255,255,0.4);
+
+}
+
+.footer-child{
+    border: 1px solid red;
+    width: 100%;
+    margin-top:1.5rem;
+    margin-left: 9rem;   
+}
+.first-paragrafo ul{
+    display: flex;
+
+}
+.first-paragrafo ul li {
+    list-style-type: none;
+
+}
+.first-paragrafo ul li a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.4);
+    font-size: 0.8rem;
+}
+
