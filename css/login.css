@@ -7,40 +7,35 @@
 }
 
 body{
-
     background-image: url(/img/imagem-de-fundo.jpeg);
     background-size: cover;
-
+    
 }
- 
 .container-main{
-    position: absolute;
-    display: flex;
-    width: 100%;
+    width: 100vw;
     height: 100% auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0,0,0,0.5);
-    
+    background-color: rgba(0,0,0,0.5);   
 }
-.logo{
-   position:relative;
-   right:34rem;
-   margin-top: 1rem;
+.nav{
+    padding-left: 2.4rem;
+    width: 100%;    
+    margin-top: 1rem;
 }
-.logo img{
+.nav .logo img{
     padding:0;
-   width:10rem;
-   height:3rem;
+   width:100px;
+   height:40px;
 }
 .container-child{
-    width: 34%;
+    width: 28rem;
     height: 100%;
     border-radius: 0.4rem;
-    padding: 2.5rem 4rem 0rem;
-    background-color: rgba(0,0,0,0.7);
+    padding: 2.9rem 4rem 0rem;
+    background-color: rgba(0,0,0,0.8);
 }
 .entrar{
     color: #fff;
@@ -75,9 +70,8 @@ border-radius: 0.3rem;
 margin-bottom: 1rem;
 cursor: pointer;
 }
-
 .form-checkbox{
-    color:rgba(255,255,255,0.6);
+    color:rgba(255,255,255,0.9);
     font-size:0.8rem;
     display: flex;
     justify-content: space-between;
@@ -85,12 +79,11 @@ cursor: pointer;
 }
 .ajuda span a{
     text-decoration: none;
-    color:rgba(255,255,255,0.6);
+    color:rgba(255,255,255,0.9);
 }
 .ajuda span a:hover{
 text-decoration: underline;
 }
-
 .facebook{
     display: flex;
     align-items: center;
@@ -100,15 +93,14 @@ text-decoration: underline;
     font-size: 0.8rem;
     margin-left: 1rem;
     text-decoration: none;
-    color:rgba(255,255,255,0.6);
-    
+    color:rgba(255,255,255,0.5);   
 }
 .facebook i{
     color: blue;
     font-size: 1.5rem;
 }
 .novo{
-    color: rgba(255,255,255,0.6);
+    color: rgba(255,255,255,0.5);
 }
 .assine a{
     text-decoration: none;
@@ -118,9 +110,8 @@ text-decoration: underline;
     text-decoration: underline;
     cursor:pointer;   
 }
-
 .texto p{
-    color: rgba(255,255,255,0.6);
+    color: rgba(255,255,255,0.5);
     font-size: 0.8rem;
     margin-top: 1rem;
     margin-bottom: 9rem;
@@ -133,35 +124,116 @@ text-decoration: underline;
     cursor: pointer;
     color: rgb(33, 129, 240);
 }
-
-
 .footer{
     margin-top: 6rem;
+    padding-left: 12%;
     width: 100%;
     height: 40vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgba(0,0,0,0.7);
-    color: rgba(255,255,255,0.4);
-
+    background-color: rgba(0,0,0,0.8);
+    color: rgba(255,255,255,0.5);
 }
-
+.duvida p{
+    margin-bottom: 2%;
+}
 .footer-child{
-    border: 1px solid red;
     width: 100%;
-    margin-top:1.5rem;
-    margin-left: 9rem;   
-}
-.first-paragrafo ul{
+    margin-top:2rem; 
     display: flex;
-
+    flex-direction: column;
+    justify-content: center;  
 }
-.first-paragrafo ul li {
-    list-style-type: none;
 
+.footer-p ul li{
+    list-style: none;
 }
-.first-paragrafo ul li a{
+.footer ul li a{
     text-decoration: none;
-    color: rgba(255,255,255,0.4);
-    font-size: 0.8rem;
+    color: rgba(255,255,255,0.5);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8rem;  
+}
+.ul-first{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.ul-first li{
+    margin-bottom: 1rem;
+}
+.li-last{
+    display: flex;
+    align-self: flex-start;
 }
 
+.space-left li{
+    padding-left:10vw;
+}
+
+/* media queries*/
+@media screen and (max-width:740px) {
+    body{
+     background-image: none;    
+     width: 100vw;
+    }
+    .container-main{
+    background-color: rgb(0,0,0);
+    }
+    .container-child{
+    width: 100%;
+    height: 100%;
+    padding: 0 2.4rem;
+    }
+
+    .nav .logo img{
+        padding:0;
+       width:60px;
+       height:20px;
+    }
+    .entrar{
+        margin-bottom: 1rem;
+    }
+    .texto p{
+        margin-bottom: 5rem;
+    }
+    .footer{    
+        margin-top: 0;
+        border-top: 1px solid rgba(255,255,255,0.5);
+    }
+
+    .footer{
+        padding-left:2.4rem;
+    }
+    .li-last{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen  and (max-width:500px){
+    .ul-first{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .li-last{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .li-last li{
+        margin-left: 0;
+    }
+
+    .footer-child{
+        background-color: rgb(0,0,0);
+    }
+}
+
+@media screen  and (max-width:300px){
+    .space-left li{
+        padding-left: 0;
+    }
+    
+}
