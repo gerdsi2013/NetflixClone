@@ -14,7 +14,8 @@ body {
     color: white;
 }
 .logo img{
-    width: 120px;
+    width: 10rem;
+    padding: 1rem 1rem;
 }
 header .conteiner {
     margin-left: 5px;
@@ -22,6 +23,7 @@ header .conteiner {
     align-items: center;
     justify-content: space-between;
     align-self: baseline;
+    background-color:var(--preto);
 }
 header nav a {
     text-decoration: none;
@@ -58,15 +60,20 @@ header nav a {
     margin-bottom: 10%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+.botoes button:first-child{
+    margin-bottom: 0.5rem;
+}
 .botao {
     background-color: rgba(0, 0, 0, .50);
     border: 1px solid white;
     color: white;
-    padding: 15px 30px;
-    margin-right: 15px;
-    font-size: 12px;
+    width: 12rem;
+    height: 3rem;
+    font-size: 0.8rem;
     cursor: pointer;
+    border-radius: 0.3rem;
     transition: 2s ease all;
+
 }
 
 .botao:hover {
@@ -75,7 +82,7 @@ header nav a {
     border: 1px solid white;
 }
 .botao i {
-    margin-right: 8px;
+    margin-right: 0.3rem;
 }
 .sinop {
     letter-spacing: 0.4em;
@@ -89,4 +96,45 @@ header nav a {
 }
 .filme-principal .container {
     width: 50%;
+}
+
+
+/* MEDIA QUERIES*/
+
+
+@media screen and (max-width: 700px) {
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .botao{
+        margin-top: 5px;
+        width: 100%;
+        height: 5rem;
+   }
+}
+@media screen and (min-width: 1000px){
+    .discricao{
+        width:50%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .botao{
+        width: 8rem;
+        height: 2rem;
+        font-size: 0.6rem;
+    }
+    .titulo{
+        font-size: 1.6rem;
+    } 
+}
+
+@media  screen and (max-width: 500px) {
+    .logo img{
+      width: 6rem;
+    }
+    .titulo{
+        font-size: 1.3rem;
+    }
 }

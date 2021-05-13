@@ -162,6 +162,16 @@ text-decoration: underline;
 .ul-first li{
     margin-bottom: 1rem;
 }
+
+
+.ul-first li a{
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+ .ul-first li a:hover{
+ color: #fff;
+ transition: 0.3s ease-in-out; 
+}
 .li-last{
     display: flex;
     align-self: flex-start;
