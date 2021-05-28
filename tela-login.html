@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -14,13 +14,13 @@
 
     <main class="container-main">
         <nav class="nav">
-            <div class="logo">
+            <div class="soon">
                 <img src="/img/logo.svg.png" alt="logo">
             </div>
         </nav>
         <div class="container-child">
-            <h2 class="entrar">Entrar</h2>
-            <form action="post" class="formulario">
+            <h2 class="enter">Entrar</h2>
+            <form action="post" class="form">
                 <input class="input" type="text" name="texto" placeholder="Email ou número de telefone">
                 <br>
                 <input type="password" name="senha" id="senha" placeholder="Senha">
@@ -32,20 +32,20 @@
                         <input type="checkbox" name="checkbox" id="checkbox">
                         <label for="text">Lembre-se de mim</label>
                     </div>
-                    <div class="ajuda">
+                    <div class="help">
                         <span><a href="#">Precisa de ajuda?</a></span>
                     </div>
                 </div>
-                <div class="texto">
+                <div class="text">
                     <div class="facebook">
                         <i class="fab fa-facebook-square"></i>
                         <a href="#">Conectar com facebook</a>
                     </div>
 
-                    <span class="novo">Novo por aqui? </span>
-                    <span class="assine"><a href="#">Assine agora.</a></span>
+                    <span class="new">Novo por aqui? </span>
+                    <span class="sign"><a href="#">Assine agora.</a></span>
                     <p>Está página é protegida pelo Google reCAPTCHA
-                        para garantir que vocẽ não é um robô. <span class="saiba"><a href="#">Saiba mais.</a></span>
+                        para garantir que vocẽ não é um robô. <span class="know"><a href="#">Saiba mais.</a></span>
                     </p>
                 </div>
 
@@ -55,35 +55,34 @@
         </div>
 
 
-        <footer class="footer">
-
+        <footer class="footer-main">
+          
             <div class="footer-child">
-                <span class="duvida">
-                    <p>Dúvidas? Ligue 0800-761-4631</p>
-                </span>
+                <span class="phone">Duvidas? Ligue <a href="#">0800-761-4631</a></span>
 
-                <div class="footer-p">
-                    <ul class="ul-first">
-                        <div class="li-first">
-                            <li><a href="#">Perguntas frequentes</a> </li>
-                            <li class="space-left"><a href="#">Preferências de cookies</a> </li>
-                        </div>
-                        <div class="li-segund space-left">
-                            <li><a href="#">Centro de ajuda</a></li>
-                            <li><a href="#">Informações corporativas</a> </li>
-                        </div>
-                        <div class="li-last space-left">
-                            <li><a href="#">Termo de uso</a></li>
-                            <li><a href="#">Privacidade</a></li>
-                        </div>
-                    </ul>
+                <div class="list">
+                     <ul class="list-child">
+                         <li><a href="#">Perguntas frequentes</a></li>
+                         <li><a href="#">Centro de ajuda</a></li>
+                         <li><a href="#">Termo de uso</a></li>
+                         <li><a href="#">Privacidade</a></li>
+                         <li><a href="#">Preferências de cokies</a></li>
+                         <li><a href="#">Informações coorporativas</a></li>
+                         
+                     </ul>
                 </div>
+            </div>
 
-            </div>
-            </div>
+         
+            <select class="select" name="idioma" id="idioma">
+                
+                <option value="portugues">Português</option>
+                <option value="ingles">English</option>
+            </select>
         </footer>
 
     </main>
+    
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
 </body>
 

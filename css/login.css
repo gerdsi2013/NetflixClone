@@ -12,51 +12,52 @@ body{
     
 }
 .container-main{
-    width: 100vw;
+    width: 100%;
     height: 0% auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0,0,0,0.5);   
+    background-color:rgba(0,0,0,0.4)
 }
 .nav{
-    padding-left: 2.4rem;
     width: 100%;    
     margin-top: 1rem;
+    padding-left: 1.2rem;
 }
-.nav .logo img{
-    padding:0;
-   width:100px;
-   height:40px;
+.nav .soon img{
+   width: 10rem;
+   height:2.81rem;
 }
 .container-child{
     width: 28rem;
     height: 100%;
     border-radius: 0.4rem;
-    padding: 2.9rem 4rem 0rem;
+    padding: 0% 5% 0%;
+    margin-top: 2rem;
     background-color: rgba(0,0,0,0.8);
 }
-.entrar{
+.enter{
     color: #fff;
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
 }
-.formulario>input{
+.form >input{
     margin-top:1rem;
 }
-.formulario .button{
+.form .button{
     margin-top: 2.5rem;
 }
-.formulario>input{
+.form >input{
     outline: none;
     width: 100%;
     height: 3rem;
     border-radius: 0.3rem;
     background-color: rgb(53, 52, 52);
     padding-left:1.3rem;
-    font-weight: bold;
-    font-size:1rem;
+    font-weight: 500;
+    font-size:0.9rem;
     color:#fff;
 }
 .button{
@@ -77,11 +78,12 @@ cursor: pointer;
     justify-content: space-between;
     margin-bottom: 3rem;
 }
-.ajuda span a{
+
+.help span a{
     text-decoration: none;
     color:rgba(255,255,255,0.9);
 }
-.ajuda span a:hover{
+.help span a:hover{
 text-decoration: underline;
 }
 .facebook{
@@ -99,93 +101,94 @@ text-decoration: underline;
     color: blue;
     font-size: 1.5rem;
 }
-.novo{
+.new{
     color: rgba(255,255,255,0.5);
 }
-.assine a{
+.sign a{
     text-decoration: none;
     color: #fff;
 }
-.assine a:hover{
+.sign a:hover{
     text-decoration: underline;
     cursor:pointer;   
 }
-.texto p{
+.text p{
     color: rgba(255,255,255,0.5);
-    font-size: 0.8rem;
+    font-size: 75%;
     margin-top: 1rem;
     margin-bottom: 9rem;
 }
-.saiba a{
-    text-decoration: none;
-}
-.saiba a{
-    text-decoration: underline;
+
+.know a{
+    text-decoration:none;
     cursor: pointer;
     color: rgb(33, 129, 240);
 }
-.footer{
-    margin-top: 6rem;
-    padding-left: 12%;
+.know a:hover{
+    text-decoration: underline;
+}
+
+/*estilização da footer*/
+
+.footer-main{
+    margin-top: 5rem;
+    padding: 2% 12% 0%;
     width: 100%;
-    height: 20rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgba(0,0,0,0.8);
     color: rgba(255,255,255,0.5);
 }
-.duvida p{
-    margin-bottom: 1.5rem;
+
+.phone a{
+    text-decoration:none;
+    color: rgba(255,255,255,0.5);
 }
-.footer-child{
-    width: 100%;
-    margin-top:2rem; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  
+.phone a:hover{
+    text-decoration: underline;
 }
 
-.footer-p ul li{
-    list-style: none;
+.list-child {
+    margin-top:1.5rem;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    column-gap: 0.8rem;
+    row-gap: 0.6rem;
+      
 }
-.footer ul li a{
+.list ul li{
+    list-style-type: none;
+}
+.list ul li a{
     text-decoration: none;
     color: rgba(255,255,255,0.5);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.8rem;  
+    font-size: 75%; 
 }
-.ul-first{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    
+.list ul li a:hover{
+    text-decoration: underline;
 }
-.ul-first li{
-    margin-bottom: 1rem;
-}
-
-
-.ul-first li a{
-    color: #fff;
-    transition: 0.3s ease-in-out;
-}
- .ul-first li a:hover{
- color: #fff;
- transition: 0.3s ease-in-out; 
-}
-.li-last{
-    display: flex;
-    align-self: flex-start;
-}
-
-.space-left li{
-    padding-left:10vw;
+.select{
+    width: 120px;
+    height: 40px;
+    margin: 2rem 0rem 3rem;
+    background-color:rgba(0,0,0,0.8);
+    color: rgba(255,255,255,0.5);
+    font-size: 75%;
+    padding: 0.5rem;
+    border: 0.1rem solid rgba(255,255,255,0.3);
+    border-radius: 3px;
 }
 
 /* media queries*/
-@media screen and (max-width:760px) {
+@media screen and (max-width:1200px){
+    .footer-main{
+        padding-left: 4%;
+    }
+}
+@media screen and (max-width:740px) {
     body{
      background-image: none;    
-     width: 100vw;
+     width: 100%;
     }
     .container-main{
     background-color: rgb(0,0,0);
@@ -194,17 +197,14 @@ text-decoration: underline;
     .container-child{
     width: 100%;
     height: 100%;
+    margin-top:0;
+    border-bottom:0.1rem solid rgba(255,255,255,0.5);
     }
 
-    .nav .logo img{
-        padding:0;
-       width:60px;
-       height:20px;
-    }
-    .entrar{
+    .enter{
         margin-bottom: 1rem;
     }
-    .texto p{
+    .text p{
         margin-bottom: 5rem;
     }
     .footer{    
@@ -220,54 +220,50 @@ text-decoration: underline;
         flex-direction: column;
     }
 
+    .list-child {
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+    }
+  
 }
 
-@media screen  and (max-width:520px){
-    .ul-first{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .li-last{
-        display: flex; 
-        flex-direction: row;
-        
-    }
-    .li-last li{
-        padding-left: 0;
-    }
+@media screen and (max-width:700px){
 
-    .li-last li:last-child{
-        padding-left: 7em;
+    .nav .soon img{
+        padding:0;
+       width:5rem;
+       height:1.25rem;
+       margin-bottom: 1rem;    
     }
-    
+    .enter{
+        margin-top: 0.1rem;
+    }
 }
-@media screen and (max-width:400px) {
-    .li-last li:last-child{
-        padding-left:6rem;   
+
+@media screen and (max-width:520px){
+   
+    .list-child{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 0.2rem;
+    }
 }
  
-@media screen  and (max-width:370px){
-   .ul-first {
-       display: flex;
-       flex-direction: column;
-       align-items: flex-start;
-   }
-   .space-left  li{
-       padding-left: 0;
-       
-   }
-   .li-last{
-       display: flex;
-       flex-direction: column;
-   }
-   .li-last li:last-child{
-    padding-left:0; 
-   }
-   .formulario>input{
+@media screen and (max-width:370px){
+   
+   .form >input{
        font-size: 0.8rem;
        padding-left: 0.8rem;
    }
-
-
+  
 }
+
+@media screen and (max-width:300px){
+
+    .list-child{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap:0.1rem;
+        row-gap: 0.1rem;
+    }
 }
